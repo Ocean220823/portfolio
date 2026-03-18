@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARUN.EXE | System Access</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-gradient"></div>
+    <div id="particles-js"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- System Boot Loader -->
+    <div id="boot-screen">
+        <div class="terminal">
+            <p class="typewriter">> INITIALIZING TARUN.EXE...</p>
+            <p class="typewriter delay-1">> LOADING CORE: SOFTWARE_DEV, GAME_DEV</p>
+            <p class="typewriter delay-2">> ACCESS GRANTED. SYSTEM ONLINE.</p>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">TARUN<span class="neon-red">.EXE</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#achievements">ACHIEVEMENTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="scene parallax-wrapper">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="intro-content">
+                <h2>Hi, I'm Tarun</h2>
+                <h1 class="glow-pulse lg alternating-title">
+                    <span class="title-option active">SOFTWARE DEVELOPER</span>
+                    <span class="title-option">GAME DEVELOPER</span>
+                </h1>
+                <p class="subtitle">I build systems that combine logic, performance, and interaction.</p>
+                
+                <div class="action-buttons">
+                    <button class="btn btn-primary interactive" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fa-solid fa-bolt"></i> INITIALIZE
+                    </button>
+                    <a href="https://github.com/Ocean220823" target="_blank" class="btn btn-secondary interactive">
+                        <i class="fa-brands fa-github"></i> GITHUB LOG
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="scene">
+            <div class="glass-panel content-box about-container">
+                <div class="about-text block-revealer">
+                    <h2 class="neon-blue section-title"><i class="fa-solid fa-user-astronaut"></i> ABOUT_ME</h2>
+                    <p class="typewriter-line">> Accessing personal logs...</p>
+                    <p>I’m Tarun M Shetty, an MCA student at REVA University specializing in software and game development.</p>
+                    <p>I build systems that combine logic, performance, and interaction — from machine learning models that predict real-world outcomes to game environments powered by dynamic AI behavior.</p>
+                    <p>My work focuses on creating experiences that are not just functional, but immersive and responsive. Whether it's designing intelligent systems or developing gameplay mechanics, I aim to make technology feel alive.</p>
+                    <p>With a strong foundation in programming and a background shaped by discipline and leadership through NCC, I bring consistency, focus, and execution to everything I build.</p>
+                </div>
+                <div class="traits-panel block-revealer">
+                    <div class="trait-card interactive">
+                        <i class="fa-solid fa-shield-halved neon-red"></i>
+                        <h3>Discipline</h3>
+                        <p>Consistent execution</p>
+                    </div>
+                    <div class="trait-card interactive">
+                        <i class="fa-solid fa-flag neon-blue"></i>
+                        <h3>Leadership</h3>
+                        <p>Guiding teams to success</p>
+                    </div>
+                    <div class="trait-card interactive">
+                        <i class="fa-solid fa-users neon-red"></i>
+                        <h3>Teamwork</h3>
+                        <p>Collaborative synergy</p>
+                    </div>
+                    <div class="trait-card interactive">
+                        <i class="fa-solid fa-puzzle-piece neon-blue"></i>
+                        <h3>Problem Solving</h3>
+                        <p>Analytical solutions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="scene">
+            <div class="projects-container">
+                <h2 class="neon-blue section-title clean-glow block-revealer"><i class="fa-solid fa-folder-tree"></i> MISSION_LOGS</h2>
+                <p class="subtitle block-revealer">Select a project to view mission details.</p>
+                
+                <div class="mission-select-grid block-revealer">
+                    <!-- EIDEN -->
+                    <div class="mission-card interactive tilt-card primary-mission" onclick="openMission('eiden')">
+                        <div class="card-glitch-bg"></div>
+                        <div class="card-content">
+                            <span class="mission-status text-blink neon-red">ACTIVE</span>
+                            <h3>EIDEN</h3>
+                            <p class="mission-subtitle">Only the Blade Remains</p>
+                            <p class="mission-highlight">> AI-driven adaptive combat system</p>
+                            <div class="tech-tags">
+                                <span>Unreal Engine 5</span>
+                                <span>AI Combat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CS2 Predictor -->
+                    <div class="mission-card interactive tilt-card border-blue" onclick="openMission('cs2')">
+                        <div class="card-content">
+                            <span class="mission-status completed">COMPLETED</span>
+                            <h3>CS2 Predictor</h3>
+                            <p class="mission-highlight">> Data-driven match prediction system</p>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>Random Forest</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SmartChat -->
+                    <div class="mission-card interactive tilt-card border-red" onclick="openMission('smartchat')">
+                        <div class="card-content">
+                            <span class="mission-status completed">COMPLETED</span>
+                            <h3>SmartChat</h3>
+                            <p class="mission-highlight">> AI-powered conversational interface</p>
+                            <div class="tech-tags">
+                                <span>Java Swing</span>
+                                <span>Gemini API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SkyForce -->
+                    <div class="mission-card interactive tilt-card border-blue" onclick="openMission('skyforce')">
+                        <div class="card-content">
+                            <span class="mission-status completed">COMPLETED</span>
+                            <h3>SkyForce</h3>
+                            <p class="mission-highlight">> Gameplay mechanics and system design</p>
+                            <div class="tech-tags">
+                                <span>Unity</span>
+                                <span>C#</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission Details GSAP Modal -->
+            <div id="mission-modal" class="glass-modal hidden">
+                <div class="modal-bg interactive" onclick="closeMission()"></div>
+                <div class="modal-content glass-panel">
+                    <button class="close-btn interactive" onclick="closeMission()"><i class="fa-solid fa-xmark"></i></button>
+                    <div id="modal-dynamic-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications Section -->
+        <section id="achievements" class="scene">
+            <div class="dual-columns">
+                <!-- Certifications -->
+                <div class="cert-column block-revealer">
+                    <h2 class="neon-blue section-title"><i class="fa-solid fa-certificate"></i> CERTIFICATIONS</h2>
+                    <div class="cert-grid">
+                        <div class="cert-card interactive border-blue"><i class="fa-solid fa-brain"></i> Applied Generative AI</div>
+                        <div class="cert-card interactive border-red"><i class="fa-solid fa-robot"></i> OpenAI GPT-3 Dev</div>
+                        <div class="cert-card interactive border-blue"><i class="fa-solid fa-code"></i> AI-first Eng.</div>
+                        <div class="cert-card interactive border-red"><i class="fa-solid fa-message"></i> Prompt Eng.</div>
+                        <div class="cert-card interactive border-blue"><i class="fa-solid fa-eye"></i> Semrush AI Vis.</div>
+                        <div class="cert-card interactive border-red"><i class="fa-solid fa-search"></i> Tech SEO & AI</div>
+                        <div class="cert-card interactive border-blue"><i class="fa-solid fa-shield"></i> Cisco Cybersecurity</div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="achieve-column block-revealer">
+                    <h2 class="neon-red section-title"><i class="fa-solid fa-medal"></i> ACHIEVEMENTS</h2>
+                    <div class="achieve-list">
+                        <div class="achieve-item glass-panel interactive tilt-card border-blue">
+                            <i class="fa-solid fa-star neon-blue"></i>
+                            <div>
+                                <h3>NCC A, B, C Certificates</h3>
+                                <p>Leadership & Teamwork throughout 12+ camps</p>
+                            </div>
+                        </div>
+                        <div class="achieve-item glass-panel interactive tilt-card border-red">
+                            <i class="fa-solid fa-trophy neon-red"></i>
+                            <div>
+                                <h3>Best Cadet Award (2024)</h3>
+                                <p>CWS - Recognized for Excellence</p>
+                            </div>
+                        </div>
+                        <div class="achieve-item glass-panel interactive tilt-card border-blue">
+                            <i class="fa-solid fa-award neon-blue"></i>
+                            <div>
+                                <h3>Best Cadet Award (2023)</h3>
+                                <p>Mangalore Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="scene">
+            <div class="content-box block-revealer">
+                <h2 class="neon-blue section-title"><i class="fa-solid fa-microchip"></i> NEURAL_SKILLS</h2>
+                <div class="orbits-container">
+                    <div class="center-core glow-pulse">CORE</div>
+                    <!-- Orbit Rings and Tags via JS or CSS -->
+                    <div class="orbit orbit-1">
+                        <div class="skill-tag border-red" style="--angle: 0deg;">C++</div>
+                        <div class="skill-tag border-blue" style="--angle: 72deg;">Java</div>
+                        <div class="skill-tag border-red" style="--angle: 144deg;">Python</div>
+                        <div class="skill-tag border-blue" style="--angle: 216deg;">CSS</div>
+                        <div class="skill-tag border-blue" style="--angle: 288deg;">C</div>
+                    </div>
+                    <div class="orbit orbit-2">
+                        <div class="skill-tag border-blue" style="--angle: 0deg;">SQL</div>
+                        <div class="skill-tag border-red" style="--angle: 51deg;">Unreal Engine</div>
+                        <div class="skill-tag border-red" style="--angle: 103deg;">HTML</div>
+                        <div class="skill-tag border-blue" style="--angle: 154deg;">JavaScript</div>
+                        <div class="skill-tag border-blue" style="--angle: 206deg;">C#</div>
+                        <div class="skill-tag border-red" style="--angle: 257deg;">Unity</div>
+                        <div class="skill-tag border-red" style="--angle: 309deg;">Godot</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages & Contact -->
+        <section id="contact" class="scene">
+            <div class="dual-columns align-top block-revealer">
+                <!-- Languages -->
+                <div class="lang-column content-box glass-panel border-blue">
+                    <h2 class="neon-blue section-title"><i class="fa-solid fa-globe"></i> LINGUISTICS</h2>
+                    <div class="lang-bars">
+                        <div class="lang-item">
+                            <span>English</span>
+                            <div class="bar-bg"><div class="bar-fill" data-width="95%"></div></div>
+                        </div>
+                        <div class="lang-item">
+                            <span>Hindi</span>
+                            <div class="bar-bg"><div class="bar-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="lang-item">
+                            <span>Kannada</span>
+                            <div class="bar-bg"><div class="bar-fill" data-width="90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="contact-column content-box glass-panel border-red">
+                    <h2 class="neon-red section-title"><i class="fa-solid fa-terminal"></i> TRANSMIT</h2>
+                    <div class="contact-info">
+                        <a href="mailto:tarunshetty1554@gmail.com" class="contact-link interactive">
+                            <i class="fa-solid fa-envelope"></i> tarunshetty1554@gmail.com
+                        </a>
+                        <a href="tel:+919916188507" class="contact-link interactive">
+                            <i class="fa-solid fa-phone"></i> +91 9916188507
+                        </a>
+                        <a href="https://github.com/Ocean220823" target="_blank" class="contact-link interactive">
+                            <i class="fa-brands fa-github"></i> github.com/Ocean220823
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
